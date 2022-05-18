@@ -53,6 +53,34 @@ class Scheduler extends Component {
                             {name: "Range Rover", seats: 5, doors: 4, transmission: "Automatic", id: "G"},
                         ]
                     },
+                    {
+                        name: "SUV", id: "G2", expanded: true, children: [
+                            {name: "BMW X1", seats: 5, doors: 4, transmission: "Automatic", id: "E1"},
+                            {name: "Jeep Wrangler", seats: 5, doors: 4, transmission: "Automatic", id: "F1"},
+                            {name: "Range Rover", seats: 5, doors: 4, transmission: "Automatic", id: "G1"},
+                        ]
+                    },
+                    {
+                        name: "SUV", id: "G3", expanded: true, children: [
+                            {name: "BMW X1", seats: 5, doors: 4, transmission: "Automatic", id: "E2"},
+                            {name: "Jeep Wrangler", seats: 5, doors: 4, transmission: "Automatic", id: "F2"},
+                            {name: "Range Rover", seats: 5, doors: 4, transmission: "Automatic", id: "G2"},
+                        ]
+                    },
+                    {
+                        name: "SUV", id: "G4", expanded: true, children: [
+                            {name: "BMW X1", seats: 5, doors: 4, transmission: "Automatic", id: "E3"},
+                            {name: "Jeep Wrangler", seats: 5, doors: 4, transmission: "Automatic", id: "F3"},
+                            {name: "Range Rover", seats: 5, doors: 4, transmission: "Automatic", id: "G3"},
+                        ]
+                    },
+                    {
+                        name: "SUV", id: "G5", expanded: true, children: [
+                            {name: "BMW X1", seats: 5, doors: 4, transmission: "Automatic", id: "E4"},
+                            {name: "Jeep Wrangler", seats: 5, doors: 4, transmission: "Automatic", id: "F4"},
+                            {name: "Range Rover", seats: 5, doors: 4, transmission: "Automatic", id: "G4"},
+                        ]
+                    },
                 ],
                 events: [
                     {
