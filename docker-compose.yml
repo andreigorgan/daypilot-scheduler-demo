@@ -1,0 +1,18 @@
+version: '3.1'
+
+services:
+
+  web:
+    image: node:14.17.6
+    user: "node"
+    restart: always
+    working_dir: /home/node/app
+    volumes:
+        - .:/home/node/app
+    ports:
+        - "3000:3000"
+    expose:
+      - "3000"
+    # ATTENTION: on first run, mongo must launch with auth disabled!!!!!
+    command: npm start
+
