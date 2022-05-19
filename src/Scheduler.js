@@ -31,9 +31,7 @@ class Scheduler extends Component {
                 eventClickHandling: "Enabled",
                 onEventClicked: this.onEventClicked,
                 allowMultiSelect: false,
-                rowHeaderColumns: [
-                    {name: "Car"}
-                ],
+                allowDefaultContextMenu: true,
                 resources: [
                     {
                         name: "Convertible", id: "G2", expanded: true, children: [
@@ -194,6 +192,7 @@ class Scheduler extends Component {
                     if (this.state.config.scale === "Day" && (args.cell.start.getDayOfWeek() === 0 || args.cell.start.getDayOfWeek() === 6)) {
                         args.cell.backColor = "silver";
                     }
+                    args.cell.cssClass = "empty-cell"
                 }
             }
         };
